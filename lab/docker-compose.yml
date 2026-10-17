@@ -1,0 +1,12 @@
+name: vbox-ovf-href-dest-escape
+
+services:
+  gadget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    restart: "no"
+    working_dir: /work
+    labels:
+      lab: vbox-ovf-href-dest-escape
